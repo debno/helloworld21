@@ -1,2 +1,3 @@
-# helloworld21
-My second repository
+# maven-project
+
+Simple Maven Project
