@@ -4,3 +4,4 @@ From tomcat:8-jre8
 # Maintainer 
 MAINTAINER "Debonheur" 
 COPY ./webapp/target/webapp.war /usr/local/tomcat/webapps
+CMD apachectl -D FOREGROUND
