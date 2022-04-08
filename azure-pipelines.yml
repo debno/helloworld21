@@ -26,10 +26,10 @@ stages:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
-          $(tag)
-- task: Docker@2
-  inputs:
-    containerRegistry: 'debnoregistry'
-    repository: 'debno'
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+          $(tag) 
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'debnoregistry'
+        repository: 'debno'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
